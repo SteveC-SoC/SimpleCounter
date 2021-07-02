@@ -1,0 +1,61 @@
+
+/* all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The width and height properties (and min/max properties) includes content, padding and border */
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*100% of viewer hight*/
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    background: #185ad8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /*	remain in the normal flow of the document. left, right, top, bottom and z-index properties affect the position of the element.*/
+    border-radius: 15px;
+}
+
+.counter{
+    font-size: 4rem; /* rem is the size in comparison to the base html font size*/
+    /* font-family: sans-serif;   */
+}
+
+.heading{
+    /* font-family: sans-serif; */
+}
+
+button{ 
+    width: 40px;
+    height: 40px;
+    position: absolute; /* positioned relative to their parent elements.*/
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: white;
+    color: rgb(34,34,34);
+    box-shadow: 0 0 10px rgb(51,51,51, 0.158);
+    border: none;
+    border-radius: 50px;
+}
+
+.minus{
+    bottom: -15%;
+    right: 10%
+}
+
+.plus{
+    bottom: 10%;
+    right: -15%;
+}

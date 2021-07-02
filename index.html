@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="heading">Counter</div>
+      <div class="counter"></div>
+      <button class="plus">+</button>
+      <button class="minus">-</button>
+    </div>
+
+    <script>
+      const counter = document.querySelector(".counter");
+      const increaseButton = document.querySelector(".plus");
+      const decreaseButton = document.querySelector(".minus");
+
+      let value = 0;
+      counter.innerHTML = value;
+
+      function increase() {
+        value++;
+        counter.innerHTML = value;
+        console.log("click");
+      }
+      function decrease() {
+        if (value !== 0) {
+          value--;
+          counter.innerHTML = value;
+        }
+        console.log("clicking");
+      }
+
+      increaseButton.addEventListener("click", increase);
+      decreaseButton.addEventListener("click", decrease);
+    </script>
+  </body>
+</html>
